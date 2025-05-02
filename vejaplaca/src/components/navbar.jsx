@@ -1,23 +1,22 @@
 import React from "react";
 import Logo from "../assets/LogoNav.svg";
 import Styles from "./styles/navbar.module.css";
+import { Link } from "react-router-dom";
 function Navbar() {
   return (
     <>
       <nav className={Styles.nav}>
         <div>
-          <img src={Logo} alt="" />
+          <Link to="/">
+            <img src={Logo} alt="" />
+          </Link>
         </div>
         <div className={Styles.mid}>
-          <a className={Styles.a} href="#">
-            Perguntas Frequentes
-          </a>
-          <a className={Styles.a} href="#">
-            Como Isso Funciona ?
-          </a>
-          <a className={Styles.a} href="#">
+          <Link className={Styles.a}>Perguntas Frequentes</Link>
+          <Link className={Styles.a}>Como Isso Funciona ?</Link>
+          <Link to="/suporte" className={Styles.a}>
             Suporte
-          </a>
+          </Link>
         </div>
         <div className={Styles.div_buttons}>
           <button className={Styles.button1}>Sign In</button>
