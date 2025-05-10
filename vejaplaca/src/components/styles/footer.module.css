@@ -1,0 +1,32 @@
+.container {
+  background-color: #051c34;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  width: 100%;
+  height: 200px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.containerInfoLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.Link {
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+}
+
+.containerSocial {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: center;
+}
